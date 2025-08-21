@@ -97,17 +97,32 @@ a{color:inherit; text-decoration:none}
 .btn.primary{background:linear-gradient(90deg, var(--grad1), var(--grad2)); border:none}
 .btn.ghost{background:transparent}
 
-.avatar-wrap{
-  --ring: conic-gradient(from 0deg, var(--grad1), var(--grad2), var(--grad1));
-  width:210px; height:210px; margin:auto; border-radius:50%;
-  padding:4px; background:var(--ring); animation:spin 10s linear infinite;
+.avatar-wrap {
+  width: 210px;
+  height: 210px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(45deg, red, blue, green, yellow, cyan, magenta);
+  background-size: 400% 400%;
+  animation: borderRGB 6s linear infinite; /* animated RGB colors */
 }
-.avatar{
-  width:100%; height:100%; border-radius:50%;
-  object-fit:cover; display:block; filter:drop-shadow(0 8px 24px rgba(0,0,0,.4));
-}
-@keyframes spin{to{transform:rotate(360deg)}}
 
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,.4));
+}
+
+/* New RGB animation */
+@keyframes borderRGB {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 /* headline shine */
 .shine{
   font-size:clamp(1.8rem, 4vw, 3rem);
