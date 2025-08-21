@@ -4,13 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
   <style>
-    body {display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; background:#f9f9f9; font-family:'Open Sans', sans-serif;}
-    .checkmark {font-size:4rem; color:green;}
+    /* Extra styling just for thank you page */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f9f9f9;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .checkmark {
+      font-size: 4rem;
+      color: green;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
   </style>
+
+  <!-- Auto redirect back home after 5 sec -->
   <script>
-    setTimeout(()=>{ window.location.href="index.html"; },5000);
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 5000);
   </script>
 </head>
 <body>
@@ -20,4 +55,3 @@
   <a href="index.html" class="btn primary">Back to Home</a>
 </body>
 </html>
-
