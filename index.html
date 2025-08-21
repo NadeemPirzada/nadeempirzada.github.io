@@ -4,12 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nadeem Irshad Pirzada | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
-  <script defer src="script.js"></script>
+
+  <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <!-- Header -->
@@ -18,18 +21,6 @@
       <a href="#hero" class="logo">NP</a>
       <button class="nav-toggle" aria-label="Toggle menu">☰</button>
       <nav class="nav-links">
-  <a href="#about">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#research">Research</a>
-  <a href="#projects">Projects</a>
-  <a href="#certs">Certifications</a>
-  <a href="#resume">Resume</a>
-  <a href="#contact">Contact</a>
-  <!-- Social Icons -->
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/YOUR-GITHUB" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="https://wa.me/YOUR-NUMBER" target="_blank"><i class="fab fa-whatsapp"></i></a>
-</nav>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#research">Research</a>
@@ -37,14 +28,18 @@
         <a href="#certs">Certifications</a>
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
+        <!-- Social Icons in Header -->
+        <a href="https://www.linkedin.com/in/nadeem-irshad-pirzada" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/NadeemPirzada" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/9086662764" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="hero" class="hero section">
     <div class="container hero-grid">
-      <div class="hero-text reveal">
+      <div class="hero-text">
         <h1>Nadeem Irshad Pirzada</h1>
         <p class="tagline">BBA (Hons) Marketing • Research & Analytics • Aspiring Financial Analyst</p>
         <div class="cta">
@@ -52,7 +47,7 @@
           <a class="btn outline" href="resume.pdf" target="_blank">Download Resume</a>
         </div>
       </div>
-      <div class="hero-photo reveal">
+      <div class="hero-photo">
         <img src="images/profile.jpg" alt="Profile Picture" class="profile-img"/>
       </div>
     </div>
@@ -60,10 +55,10 @@
 
   <!-- About -->
   <section id="about" class="section">
-    <div class="container narrow reveal">
+    <div class="container narrow">
       <h2>About Me</h2>
       <p>
-        BBA (Marketing) graduate with strong foundation in finance, consumer psychology, and neuromarketing.
+        BBA (Hons) in Marketing graduate with strong foundation in finance, consumer psychology, and neuromarketing.
         Published research paper on *Neuromarketing in Digital Advertising* (SSRN). 
         Passionate about data-driven decisions, financial consulting, and business analytics.
       </p>
@@ -72,7 +67,7 @@
 
   <!-- Experience -->
   <section id="experience" class="section alt">
-    <div class="container reveal">
+    <div class="container">
       <h2>Experience</h2>
 
       <div class="card role">
@@ -108,7 +103,7 @@
 
   <!-- Research -->
   <section id="research" class="section">
-    <div class="container reveal">
+    <div class="container">
       <h2>Research</h2>
       <div class="card">
         <h3>Neuromarketing in Digital Advertising (2025)</h3>
@@ -120,7 +115,7 @@
 
   <!-- Projects -->
   <section id="projects" class="section alt">
-    <div class="container reveal">
+    <div class="container">
       <h2>Academic Projects</h2>
       <div class="card"><h3>Marketing Segmentation & Customer Profiling (2024)</h3></div>
       <div class="card"><h3>Sales Psychology & Persuasion Strategies (2024)</h3></div>
@@ -130,7 +125,7 @@
 
   <!-- Certifications -->
   <section id="certs" class="section">
-    <div class="container reveal">
+    <div class="container">
       <h2>Certifications</h2>
       <div class="grid">
         <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/fMCqmt8qR4G85Puue/Hi8MJQE5T3MeTRWQR_fMCqmt8qR4G85Puue_mshrRPZywDFBnu6n2_1746956740485_completion_certificate.pdf" target="_blank">Bank of America – Investment Banking</a>
@@ -142,7 +137,7 @@
 
   <!-- Resume -->
   <section id="resume" class="section">
-    <div class="container narrow center reveal">
+    <div class="container narrow center">
       <h2>Resume</h2>
       <a class="btn primary" href="resume.pdf" target="_blank">Download Resume (PDF)</a>
     </div>
@@ -150,7 +145,7 @@
 
   <!-- Contact -->
   <section id="contact" class="section alt">
-    <div class="container reveal">
+    <div class="container">
       <h2>Let’s Connect</h2>
       <form action="https://formspree.io/f/xwpqdplg" method="POST" class="contact-form">
         <input type="hidden" name="_redirect" value="thankyou.html">
@@ -167,15 +162,14 @@
     <div class="container footer-grid">
       <span>© <span id="year"></span> Nadeem Irshad Pirzada</span>
       <div class="foot-links social">
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/YOUR-GITHUB" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="https://wa.me/YOUR-NUMBER" target="_blank"><i class="fab fa-whatsapp"></i></a>
-</div>
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
-        <a href="https://github.com/YOUR-GITHUB" target="_blank">GitHub</a>
-        <a href="https://wa.me/YOUR-NUMBER" target="_blank">WhatsApp</a>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/YOUR-GITHUB" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/YOUR-NUMBER" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
   </footer>
+
+  <!-- JS -->
+  <script defer src="script.js"></script>
 </body>
 </html>
