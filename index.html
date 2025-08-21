@@ -1,175 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nadeem Irshad Pirzada | Portfolio</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css"/>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container nav">
-      <a href="#hero" class="logo">NP</a>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#certs">Certifications</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-        <!-- Social Icons in Header -->
-        <a href="https://www.linkedin.com/in/nadeem-irshad-pirzada" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/NadeemPirzada" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://wa.me/9086662764" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      </nav>
+  <!-- ========== NAV ========== -->
+  <header class="nav">
+    <a href="#top" class="brand">NP</a>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/nadeem-irshad-pirzada" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/nadeempirzada" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://wa.me/91XXXXXXXXXX" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="hero" class="hero section">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <h1>Nadeem Irshad Pirzada</h1>
-        <p class="tagline">BBA (Hons) Marketing • Business Analytics • Aspiring Financial Analyst</p>
-        <div class="cta">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn outline" href="resume.pdf.pdf" target="_blank">Download Resume</a>
-        </div>
+  <!-- BG Gradient -->
+  <div class="bg"></div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero container">
+    <div class="hero-left">
+      <h1 class="shine">Nadeem Irshad Pirzada</h1>
+      <p class="tag">BBA (Hons) Marketing • RBusiness Analysis • Aspiring Financial Analyst</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
       </div>
-      <div class="hero-photo">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-img"/>
+    </div>
+    <div class="hero-right">
+      <!-- Put your image in repo root as profile.jpg (or change the src) -->
+      <div class="avatar-wrap">
+        <img src="profile.jpg" alt="Profile picture of Nadeem" class="avatar">
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container narrow">
-      <h2>About Me</h2>
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="container section">
+    <h2>About Me</h2>
+    <div class="card glass">
       <p>
-        BBA (Hons) in Marketing graduate with strong foundation in finance, consumer psychology, and neuromarketing.
-        Published research paper on *Neuromarketing in Digital Advertising* (SSRN). 
-        Passionate about data-driven decisions, financial consulting, and business analytics.
+        BBA (Hons) in Marketing graduate with a strong foundation in finance, consumer psychology, and neuromarketing.
+        Published a paper on <em>Neuromarketing in Digital Advertising</em> (SSRN). I enjoy building clean systems,
+        telling stories with data, and translating insights into action—especially in financial and strategic contexts.
       </p>
     </div>
   </section>
 
-  <!-- Experience -->
-  <section id="experience" class="section alt">
-    <div class="container">
-      <h2>Experience</h2>
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="container section">
+    <h2>Experience</h2>
 
-      <div class="card role">
+    <div class="grid">
+      <div class="card glass lift">
         <h3>Power BI Intern — Cognifyz Technologies</h3>
-        <ul>
-          <li>Exploratory data analysis (EDA) on investment datasets</li>
-          <li>Designed interactive Power BI dashboards</li>
-          <li>Visual reports on gender-based investment patterns</li>
+        <ul class="bullets">
+          <li>Performed EDA on investment datasets and cleaned messy data.</li>
+          <li>Built interactive dashboards for business stakeholders.</li>
+          <li>Delivered visuals on gender-based investment patterns.</li>
         </ul>
-        <p><b>Skills:</b> Power BI • Data Visualization • EDA • Statistical Analysis • Report Design</p>
+        <p class="chips">
+          <span>Power BI</span><span>Data Visualization</span><span>EDA</span><span>Stats</span><span>Report Design</span>
+        </p>
       </div>
 
-      <div class="card role">
+      <div class="card glass lift">
         <h3>Freelance Client Financial Services</h3>
-        <ul>
-          <li>Managed insurance portfolios and renewals</li>
-          <li>Supported income-tax filing and PAN form processing</li>
-          <li>Achieved 140% ROI on personal investment capital</li>
+        <ul class="bullets">
+          <li>Managed insurance portfolios, renewals & documentation.</li>
+          <li>Supported IT filing & PAN applications; streamlined records.</li>
+          <li>Achieved notable ROI on personal investments.</li>
         </ul>
-        <p><b>Skills:</b> Financial Documentation • Investment • Insurance • Tax Filing • Client Advisory</p>
+        <p class="chips">
+          <span>Financial Advisory</span><span>Investment</span><span>Insurance</span><span>Tax Filing</span><span>Client Relations</span>
+        </p>
       </div>
 
-      <div class="card role">
-        <h3>Urdu Translation Quality Analyst — Outlier AI</h3>
-        <ul>
-          <li>Reviewed AI-generated Urdu content for accuracy</li>
-          <li>Contributed training data for ML models</li>
+      <div class="card glass lift">
+        <h3>Urdu Translation QA — Outlier AI</h3>
+        <ul class="bullets">
+          <li>Reviewed AI-generated Urdu content for accuracy and tone.</li>
+          <li>Curated training data to improve model quality.</li>
         </ul>
-        <p><b>Skills:</b> Translation • Cross-Cultural Communication • AI Data Training • Quality Assurance</p>
+        <p class="chips">
+          <span>Quality Assurance</span><span>Localization</span><span>AI Data</span><span>Attention to Detail</span><span>Cross-Cultural</span>
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Research -->
-  <section id="research" class="section">
-    <div class="container">
-      <h2>Research</h2>
-      <div class="card">
-        <h3>Neuromarketing in Digital Advertising (2025)</h3>
-        <p>Published on SSRN’s Social & Personality Psychology and Managerial Marketing eJournals.</p>
-        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5272257" target="_blank">Read Publication →</a>
+  <!-- ========== RESEARCH ========== -->
+  <section id="research" class="container section">
+    <h2>Research</h2>
+    <div class="card glass lift">
+      <h3>Neuromarketing in Digital Advertising (2025)</h3>
+      <p>Published on SSRN’s Social & Personality Psychology and Managerial Marketing eJournals.</p>
+      <a class="link" target="_blank" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5272257">Read Publication →</a>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="container section">
+    <h2>Academic Projects</h2>
+    <div class="grid">
+      <div class="card glass lift">
+        <h3>Marketing Segmentation & Customer Profiling (2024)</h3>
+        <p>Built personas and segmentation maps; recommended channel-wise targeting.</p>
+      </div>
+      <div class="card glass lift">
+        <h3>Sales Psychology & Persuasion Strategies (2024)</h3>
+        <p>Studied cognitive biases & social proof to improve conversion rates.</p>
+      </div>
+      <div class="card glass lift">
+        <h3>Decoding the Digital Age: Bitcoin & Digital Money (2023)</h3>
+        <p>Explored monetary design, volatility, and adoption in a shifting macro landscape.</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section alt">
-    <div class="container">
-      <h2>Academic Projects</h2>
-      <div class="card"><h3>Marketing Segmentation & Customer Profiling (2024)</h3></div>
-      <div class="card"><h3>Sales Psychology & Persuasion Strategies (2024)</h3></div>
-      <div class="card"><h3>Decoding the Digital Age: Bitcoin & Digital Money (2023)</h3></div>
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section id="certifications" class="container section">
+    <h2>Certifications</h2>
+    <div class="grid certs">
+      <a class="card glass lift" target="_blank" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/fMCqmt8qR4G85Puue/Hi8MJQE5T3MeTRWQR_fMCqmt8qR4G85Puue_mshrRPZywDFBnu6n2_1746956740485_completion_certificate.pdf">
+        <i class="fa-solid fa-certificate"></i>
+        <span>Bank of America – Investment Banking</span>
+      </a>
+
+      <a class="card glass lift" target="_blank" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_mshrRPZywDFBnu6n2_1753709384184_completion_certificate.pdf">
+        <i class="fa-solid fa-chart-simple"></i>
+        <span>TCS – Data Visualization</span>
+      </a>
+
+      <a class="card glass lift" target="_blank" href="https://drive.google.com/file/d/1t_eSl2jOKlpD5kuRj_DwXatB_Nx5ma6J/view?usp=sharing">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>SEBI – Investment Awareness</span>
+      </a>
     </div>
   </section>
 
-  <!-- Certifications -->
-  <section id="certs" class="section">
-    <div class="container">
-      <h2>Certifications</h2>
-      <div class="grid">
-        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/fMCqmt8qR4G85Puue/Hi8MJQE5T3MeTRWQR_fMCqmt8qR4G85Puue_mshrRPZywDFBnu6n2_1746956740485_completion_certificate.pdf" target="_blank">Bank of America – Investment Banking</a>
-        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_mshrRPZywDFBnu6n2_1753709384184_completion_certificate.pdf" target="_blank">TCS – Data Visualization</a>
-        <a href="https://drive.google.com/file/d/1t_eSl2jOKlpD5kuRj_DwXatB_Nx5ma6J/view?usp=sharing" target="_blank">SEBI – Investment Awareness</a>
+  <!-- ========== RESUME ========== -->
+  <section id="resume" class="container section">
+    <h2>Resume</h2>
+    <div class="card glass center">
+      <p>Prefer a PDF? Grab the latest copy here.</p>
+      <a class="btn primary" href="resume.pdf" download>Download Resume (PDF)</a>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="container section">
+    <h2>Let’s Connect</h2>
+    <div class="grid two">
+      <div class="card glass">
+        <p class="bigline">“I love building calm systems, crafting clear visuals, and making decisions with data.”</p>
+        <div class="contact-quick">
+          <a target="_blank" href="mailto:">📧 Email</a>
+          <a target="_blank" href="https://wa.me/91XXXXXXXXXX">💬 WhatsApp</a>
+          <a target="_blank" href="https://github.com/nadeempirzada">💻 GitHub</a>
+          <a target="_blank" href="https://www.linkedin.com/in/nadeem-irshad-pirzada">🔗 LinkedIn</a>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Resume -->
-  <section id="resume" class="section">
-    <div class="container narrow center">
-      <h2>Resume</h2>
-      <a class="btn primary" href="resume.pdf" target="_blank">Download Resume (PDF)</a>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section alt">
-    <div class="container">
-      <h2>Let’s Connect</h2>
-      <form action="https://formspree.io/f/xwpqdplg" method="POST" class="contact-form">
-        <input type="hidden" name="_redirect" value="thankyou.html">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn primary">Send</button>
+      <form class="card glass form" action="https://formspree.io/f/xwpqdplg" method="POST">
+        <!-- Redirect to the thank-you overlay within this SAME page -->
+        <input type="hidden" name="_redirect" value="index.html#thanks" />
+        <label>
+          Your Name
+          <input type="text" name="name" placeholder="Enter your name" required>
+        </label>
+        <label>
+          Your Email
+          <input type="email" name="email" placeholder="Enter your email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send Message</button>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ========== FOOTER ========== -->
   <footer class="footer">
-    <div class="container footer-grid">
-      <span>© <span id="year"></span> Nadeem Irshad Pirzada</span>
-      <div class="foot-links social">
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/YOUR-GITHUB" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://wa.me/YOUR-NUMBER" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      </div>
-    </div>
+    <p>© <span id="year">2025</span> Nadeem Irshad Pirzada</p>
+    <p class="love">Built with focus, patience, and purpose.</p>
   </footer>
 
-  <!-- JS -->
-  <script defer src="script.js"></script>
+  <!-- ========== THANK YOU OVERLAY (CSS-only via :target) ========== -->
+  <section id="thanks" class="thanks">
+    <div class="thanks-card">
+      <div class="tick">✔</div>
+      <h3>Thank you!</h3>
+      <p>Your message has been sent. I’ll get back to you soon.</p>
+      <a class="btn primary" href="#top">Back to Home</a>
+    </div>
+  </section>
 </body>
 </html>
