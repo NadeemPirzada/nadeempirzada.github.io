@@ -108,21 +108,53 @@ a{color:inherit; text-decoration:none}
   animation: borderRGB 6s linear infinite; /* animated RGB colors */
 }
 
+.avatar-wrap {
+  width: 210px;
+  height: 210px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 4px;
+
+  /* Multi-color gradient */
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    indigo,
+    violet,
+    magenta,
+    pink
+  );
+  background-size: 400% 400%;
+
+  /* Animation for moving gradient */
+  animation: borderRGB 8s linear infinite;
+
+  /* Glow effect */
+  box-shadow: 0 0 20px rgba(255,255,255,0.3),
+              0 0 40px rgba(255,255,255,0.2);
+}
+
 .avatar {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  filter: drop-shadow(0 8px 24px rgba(0,0,0,.4));
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.4));
 }
 
-/* New RGB animation */
+/* RGB keyframes */
 @keyframes borderRGB {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
 /* headline shine */
 .shine{
   font-size:clamp(1.8rem, 4vw, 3rem);
