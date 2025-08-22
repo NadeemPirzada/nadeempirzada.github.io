@@ -217,7 +217,7 @@ a{color:inherit; text-decoration:none}
   background: #0b1a33;
   color: #fff;
   padding: 40px 20px;
-  transition: right 0.3s ease;
+  transition: left 0.3s ease;
   z-index: 999;
 }
 .sidebar nav a {
